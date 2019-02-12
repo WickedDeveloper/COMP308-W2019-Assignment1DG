@@ -14,7 +14,6 @@
   </head>
   <body>
     <!-- Nav Bar -->
-
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="/"
         ><img src="Assets\Images\DGF_Logo.png" alt="" style="width:50px;" />
@@ -43,7 +42,8 @@
         <li class="nav-item">
           <% } %>
           <a class="nav-link" href="/about"
-            ><i class="fa fa-lg fa-info-circle"></i> ABOUT ME<span class="sr-only"
+            ><i class="fa fa-lg fa-info-circle"></i> ABOUT ME<span
+              class="sr-only"
               >(current)</span
             ></a
           >
@@ -95,7 +95,23 @@
     </nav>
 
     <!-- Page Title -->
-    <h1><%= title %></h1>
+    <!-- <h1><%= title %></h1> -->
+
+    <div class="jumbotron" style="background:transparent">
+      <h1 class="display-4">Mission Statement</h1>
+      <p class="lead">
+        Enjoy the journey while making a difference, hold to my values and beliefs, and help everyone around 
+        me be better than they thought they could be.
+      </p>
+      <hr class="my-4" />
+      <p>For more information visit the links below.</p>
+      <p class="lead">
+        <a href="/about" class="badge badge-dark">About Me</a>
+        <a href="/projects" class="badge badge-dark">Projects</a>
+        <a href="/services" class="badge badge-dark">Services</a>
+        <a href="/contact" class="badge badge-dark">Contact Me</a>
+      </p>
+    </div>
 
     <!-- Script Section -->
     <script src="jquery/dist/jquery.min.js"></script>
