@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>David Gwyn Portfolio Website</title>
+
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="bootstrap//dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="Contents/app.css" />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="/"
+        ><img src="Assets\Images\DGF_Logo.png" alt="" style="width:50px;" />
+      </a>
+
+      <ul class="navbar-nav">
+        <% if (title == "Home") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        </li>
+
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/"
+            ><i class="fa fa-lg fa-home"></i> HOME<span class="sr-only"
+              >(current)</span
+            ></a
+          >
+        </li>
+
+        <% if (title == "About Me") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        </li>
+
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/about"
+            ><i class="fa fa-lg fa-info-circle"></i> ABOUT ME<span
+              class="sr-only"
+              >(current)</span
+            ></a
+          >
+        </li>
+
+        <% if (title == "Projects") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        </li>
+
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/projects"
+            ><i class="fa fa-lg fa-code"></i> PROJECTS<span class="sr-only"
+              >(current)</span
+            ></a
+          >
+        </li>
+
+        <% if (title == "Services") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        </li>
+
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/services"
+            ><i class="fa fa-lg fa-cogs"></i> SERVICES<span class="sr-only"
+              >(current)</span
+            ></a
+          >
+        </li>
+
+        <% if (title == "Contact Me") { %>
+        <li class="nav-item active">
+          <% } else { %>
+        </li>
+
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contact"
+            ><i class="fa fa-lg fa-address-card"></i> CONTACT ME<span
+              class="sr-only"
+              >(current)</span
+            ></a
+          >
+        </li>
+      </ul>
+    </nav>
