@@ -1,11 +1,9 @@
 let express = require('express');
 let router = express.Router();
 
-// GET About Me Page
-router.get('/', (req, res, next) => {
-    res.render('about/index', {
-        title: 'About Me'
-    });
-});
+let aboutController = require('../controllers/about');
+
+// Get ABOUT ME Page
+router.get('/', aboutController.displayAboutPage);
 
 module.exports = router;

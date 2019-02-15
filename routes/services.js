@@ -1,11 +1,9 @@
 let express = require('express');
 let router = express.Router();
 
-// GET Services Page
-router.get('/', (req, res, next) => {
-    res.render('services/index', {
-        title: 'Services'
-    });
-});
+let servicesController = require('../controllers/services');
+
+// Get SERVICES Page
+router.get('/', servicesController.displayServicesPage);
 
 module.exports = router;

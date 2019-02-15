@@ -1,11 +1,9 @@
 let express = require('express');
 let router = express.Router();
 
-// GET Contact Me Page
-router.get('/', (req, res, next) => {
-    res.render('contact/index', {
-        title: 'Contact Me'
-    });
-});
+let contactController = require('../controllers/contact');
+
+// Get CONTACT ME Page
+router.get('/', contactController.displayContactPage);
 
 module.exports = router;
