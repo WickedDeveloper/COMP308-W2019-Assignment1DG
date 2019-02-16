@@ -1,3 +1,8 @@
+// Name: David Gwyn
+// Student #: 821 304 912
+// Filename: app.js
+// Date: 02/15/19
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');

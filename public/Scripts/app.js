@@ -1,3 +1,8 @@
+// Name: David Gwyn
+// Student #: 821 304 912
+// Filename: app.js
+// Date: 02/14/19
+
 // IIFE - Immediately Invoked Function Expression
 (function() {
     function Start() {
@@ -9,6 +14,7 @@
     
 })();
 
+// Called when send button is clicked, processes form data and sends alert to user
 function processContactForm() {
     let firstName = document.getElementById("firstNameTextField").value;
     let lastName = document.getElementById("lastNameTextField").value;
