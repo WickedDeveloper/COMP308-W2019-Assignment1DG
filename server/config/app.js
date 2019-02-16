@@ -9,24 +9,24 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-let indexRouter = require('./routes/index');
-let aboutRouter = require('./routes/about');
-let projectsRouter = require('./routes/projects');
-let servicesRouter = require('./routes/services');
-let contactRouter = require('./routes/contact');
+let indexRouter = require('../routes/index');
+let aboutRouter = require('../routes/about');
+let projectsRouter = require('../routes/projects');
+let servicesRouter = require('../routes/services');
+let contactRouter = require('../routes/contact');
 
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'node_modules')));
+app.use(express.static(path.join(__dirname, '../../public')));
+app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter);
 app.use('about', aboutRouter);
